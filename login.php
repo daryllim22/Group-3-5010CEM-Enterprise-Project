@@ -1,0 +1,76 @@
+<?php
+include("Connectdb.php");
+
+if ($_SERVER['REQUEST_METHOD']=="POST"){
+
+
+$uname = $_POST['name'];
+$pw = $_POST['pw'];
+
+if(!empty($uname) && !empty($pw)){
+
+$query = "SELECT * from db WHERE name = '$uname' limit 1 ";
+
+$result = mysqli_query($con, $query);
+
+if($result){
+
+if ($result && mysqli_num_rows($result)>0){
+
+	$user_data = mysqli_fetch_assoc($result);
+
+	if(password_verify($pw,$user_data['pw'])){
+
+		header("Location: main.php");
+		die;
+	}
+	} 
+}
+echo "Make sure to enter email and password correctly, please try again.";
+
+}else
+{
+echo "Please make sure to fill in everything.";
+}
+}
+?>
+
+<!DOCTYPE html>
+<html lang="utf=8">
+
+
+
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+
+<nav>
+		<img src ="images/logo.png" width="190" height="90">
+	<ul>
+		<li><a href="main.php"><img src ="images/home.png" width="150" height="50"></a></li>
+		<li><a href="product.html"><img src ="images/p.png" width="150" height="50"></a></li>
+		<li><a href="feedback.html"><img src ="images/fb.png" width="150" height="50"></a></li>
+		<li><a href="au.html"><img src ="images/au.png" width="150" height="50"></a></li>
+	</ul>
+</nav>
+
+<div class="layout">
+<h1>Login</h1>
+	<form action="#" method="post">
+		<p>Username:</p>
+		<input type="text" name="name" placeholder="Username">
+		<p>Password:</p>
+		<input type="password" name="pw" placeholder="Password">
+		<br/><br/>
+		<a href="su.php">Sign Up Here</a>
+		<br/>
+		<button type="submit">Login</button>
+	</form>
+</div>
+
+
+</body>
+</html>

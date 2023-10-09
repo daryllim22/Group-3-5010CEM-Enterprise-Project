@@ -11,13 +11,6 @@ background-attachment: fixed;
 }
 
 
-label.logo{
-line-height: 120px;
-padding: 0 100px;
-
-
-}
-
 nav {
 background: transparent;
 height: 90px;
@@ -78,3 +71,4 @@ margin: 20px 0px;
 padding: 10px 15px;
 width: 50%;
 }
+
