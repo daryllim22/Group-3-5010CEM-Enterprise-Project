@@ -34,7 +34,7 @@ echo "Please fill up all details to register.";
 
 <head>
 <title>Sign up</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="lstyle.css">
 </head>
 <body>
  
