@@ -42,7 +42,7 @@ echo "Please fill up all details to register.";
 <nav>
 		<img src ="images/logo.png" width="190" height="90">
 	<ul>
-		<li><a href="main.php"><img src ="images/home.png" width="150" height="50"></a></li>
+		<li><a href="index.php"><img src ="images/home.png" width="150" height="50"></a></li>
 		<li><a href="product.html"><img src ="images/p.png" width="150" height="50"></a></li>
 		<li><a href="feedback.html"><img src ="images/fb.png" width="150" height="50"></a></li>
 		<li><a href="au.html"><img src ="images/au.png" width="150" height="50"></a></li>
