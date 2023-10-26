@@ -27,6 +27,9 @@ body {
     background-attachment: fixed;
 }
 
+.content-margin {
+    margin: 5rem 10rem 10rem 10rem;
+}
 
 label.logo{
     line-height: 120px;
@@ -71,6 +74,18 @@ form input:focus {
 ::placeholder {
     color: rgba(255, 0, 0, 0.641);  /*input field placeholder text*/
     font-weight: bold;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0px;
+    padding: 5px 15px;
+    width: 50%;
+    border-radius: 20px;
+    border-style: groove;
 }
 
 
@@ -136,40 +151,23 @@ form input:focus {
 
 
 
-/*newproduct.php*/
-.np-page-layout {
-    /*margin-top: 7rem;*/
-    margin: 7rem 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/*product.php*/
+.pd-pg-wrapper {
+    display: flex;  /*general css to display elements in a row*/
 }
 
-.np-page-layout input {
-    margin: 10px;
+.pd-pg-wrapper img {
+    margin: 15px;
+}
+
+.pd-major-deets {
+    margin: 15px;
+    position: relative;
+}
+
+/* .q-select select {
     padding: 10px;
-    width: 30rem;
-    border: 3px solid red;
-    border-radius: 50px;
-}
-
-.np-page-layout input:focus {
-    border-color: rgb(201, 0, 0);
-}
-
-.np-page-layout textarea {
-    margin: 10px;
-    padding: 8px;
-    width: 30rem;
-    height: 20rem;
-    border: 3px solid red;
-    border-radius: 10px;
-}
-
-.np-page-layout textarea:focus {
-    border-color: rgb(201, 0, 0);
-}
+} */
 
 
 
@@ -185,7 +183,6 @@ form input:focus {
     width: 250px;
     height: 320px;
     background-color: rgb(229, 229, 229);
-    /*border:2px solid red;*/
     box-shadow: 1px 1px rgb(116, 116, 116);
     border-radius: 10px;
     margin: 15px;
