@@ -12,4 +12,10 @@
         $userID = null;
     }
 
+
+
+    //note: when the user logs into their account, the session is actively being remembered by the web browser
+    //and the session identifier will automatically be passed throughout the web pages the user visits. That's why
+    //there's no need for code to link `login.php` to this php file
+
 ?>
