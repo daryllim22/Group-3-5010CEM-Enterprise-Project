@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include("Connectdb.php");
 
 if ($_SERVER['REQUEST_METHOD']=="POST"){
@@ -21,7 +23,12 @@ if ($result && mysqli_num_rows($result)>0){
 
 	if(password_verify($pw,$user_data['pw'])){
 
-		header("Location: test.html");
+		//retrieving user ID from the database for the logged in session
+		$userID = $user_data['id'];
+		$_SESSION['userID'] = $userID;
+
+		//directing user to the landing page once logged in
+		header("Location: index.php");
 		die;
 	}
 	} 

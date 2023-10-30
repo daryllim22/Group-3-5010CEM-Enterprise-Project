@@ -27,6 +27,13 @@ body {
     background-attachment: fixed;
 }
 
+.content-margin {
+    margin: 5rem 10rem 10rem 10rem;
+}
+
+.row {
+    display: flex;
+}
 
 label.logo{
     line-height: 120px;
@@ -60,17 +67,16 @@ header {
     margin-bottom: 40px;
 }
 
-form input {
-    font-weight: 600;
-}
-
-form input:focus {
-    border-color:rgb(224, 0, 0);
-}
-
-::placeholder {
-    color: rgba(255, 0, 0, 0.641);  /*input field placeholder text*/
+button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
     font-weight: bold;
+    margin: 20px 0px;
+    padding: 5px 15px;
+    width: 50%;
+    border-radius: 20px;
+    border-style: groove;
 }
 
 
@@ -136,40 +142,67 @@ form input:focus {
 
 
 
-/*newproduct.php*/
-.np-page-layout {
-    /*margin-top: 7rem;*/
-    margin: 7rem 20rem;
+/*product.php*/
+.pd-pg-wrapper {
+    display: flex;  /*general css to display elements in a row*/
+}
+
+.pd-pg-wrapper img {
+    margin: 15px;
+}
+
+.pd-major-deets {
+    margin: 15px;
+    position: relative;
+}
+
+.added-to-cart {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.np-page-layout input {
-    margin: 10px;
     padding: 10px;
-    width: 30rem;
-    border: 3px solid red;
-    border-radius: 50px;
+    background-color: rgb(255, 0, 0);
+    color: whitesmoke;
 }
 
-.np-page-layout input:focus {
-    border-color: rgb(201, 0, 0);
-}
 
-.np-page-layout textarea {
-    margin: 10px;
-    padding: 8px;
-    width: 30rem;
-    height: 20rem;
-    border: 3px solid red;
+
+
+
+/* cart.php */
+.cart-box {
+    margin: 8px 0;
+    padding: 5px;
+    font-weight: 800;
+    background-color: rgb(229, 229, 229);
+    box-shadow: 1px 1px rgb(116, 116, 116);
     border-radius: 10px;
 }
 
-.np-page-layout textarea:focus {
-    border-color: rgb(201, 0, 0);
+.cart-box img {
+    width: 7rem;
+    height: 7rem;
 }
+.cart-box button {
+    margin: 0 10px;
+    padding: 15px;
+}
+
+.cart-box-layout {
+    display: inline-table;
+}
+
+.cart-box-layout table {
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+}
+
+.cart-box-layout td {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 15rem;
+}
+
+
 
 
 
@@ -185,7 +218,6 @@ form input:focus {
     width: 250px;
     height: 320px;
     background-color: rgb(229, 229, 229);
-    /*border:2px solid red;*/
     box-shadow: 1px 1px rgb(116, 116, 116);
     border-radius: 10px;
     margin: 15px;
