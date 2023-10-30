@@ -31,6 +31,10 @@ body {
     margin: 5rem 10rem 10rem 10rem;
 }
 
+.row {
+    display: flex;
+}
+
 label.logo{
     line-height: 120px;
     padding: 0 100px;
@@ -61,19 +65,6 @@ header {
     justify-content: space-between;
     z-index: 999;
     margin-bottom: 40px;
-}
-
-form input {
-    font-weight: 600;
-}
-
-form input:focus {
-    border-color:rgb(224, 0, 0);
-}
-
-::placeholder {
-    color: rgba(255, 0, 0, 0.641);  /*input field placeholder text*/
-    font-weight: bold;
 }
 
 button {
@@ -165,9 +156,53 @@ button {
     position: relative;
 }
 
-/* .q-select select {
+.added-to-cart {
+    display: flex;
+    justify-content: center;
     padding: 10px;
-} */
+    background-color: rgb(255, 0, 0);
+    color: whitesmoke;
+}
+
+
+
+
+
+/* cart.php */
+.cart-box {
+    margin: 8px 0;
+    padding: 5px;
+    font-weight: 800;
+    background-color: rgb(229, 229, 229);
+    box-shadow: 1px 1px rgb(116, 116, 116);
+    border-radius: 10px;
+}
+
+.cart-box img {
+    width: 7rem;
+    height: 7rem;
+}
+.cart-box button {
+    margin: 0 10px;
+    padding: 15px;
+}
+
+.cart-box-layout {
+    display: inline-table;
+}
+
+.cart-box-layout table {
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+}
+
+.cart-box-layout td {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 15rem;
+}
+
+
 
 
 

@@ -3,6 +3,7 @@
     //start the session with the logged in user
     session_start();
 
+    //isset() to check if 'userID' exists in the session
     if (isset($_SESSION['userID'])) {
         //retrieving the user ID from the session
         $userID = $_SESSION['userID'];

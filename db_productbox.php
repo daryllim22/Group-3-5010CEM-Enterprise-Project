@@ -11,11 +11,11 @@
     }
 
     //looping through the rows of data to dynamically generate the product box displaying each product saved in the database
-    while ($row = mysqli_fetch_assoc($result)) {
-        $pdID = $row['pdID'];
-        $pdImg = $row['pdImage'];
-        $pdName = $row['pdName'];
-        $pdPrice = $row['pdPrice'];
+    while ($tbrow = mysqli_fetch_assoc($result)) {
+        $pdID = $tbrow['pdID'];
+        $pdImg = $tbrow['pdImage'];
+        $pdName = $tbrow['pdName'];
+        $pdPrice = $tbrow['pdPrice'];
 
         //creating the product box and displaying the content
         echo "<a href='product.php?id=$pdID'>";
