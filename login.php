@@ -42,7 +42,7 @@ echo "Please make sure to fill in everything.";
 
 <head>
 <title>Login</title>
-<link rel="stylesheet" href="lstyle.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
  
