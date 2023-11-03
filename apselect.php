@@ -1,3 +1,7 @@
+<?php
+	require("session_handling.php");
+?>
+
 <!DOCTYPE html>
 <html lang="utf=8">
 
