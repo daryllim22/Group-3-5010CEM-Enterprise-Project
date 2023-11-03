@@ -8,31 +8,22 @@
 <nav>
     <label class="logo"><img src ="images/logo.png" width="190" height="90"></label>
     <ul>
-    <li><a href="main.php"><img src ="images/home.png" width="130" height="40"></a></li>
-    <li><a href="product.html"><img src ="images/p.png" width="130" height="40"></a></li>
+    <li><a href="index.php"><img src ="images/home.png" width="130" height="40"></a></li>
+    <li><a href="product.php"><img src ="images/p.png" width="130" height="40"></a></li>
     <li><a href="feedback.php"><img src ="images/fb.png" width="130" height="40"></a></li>
     <li><a href="about_us.php"><img src ="images/au.png" width="130" height="40"></a></li>
-    <li><a href="login.html"><img src ="images/login.png" width="100" height="50"></a></li>
+    <li><a href="login.php"><img src ="images/login.png" width="100" height="50"></a></li>
     </ul>
 </nav>
 <center>
 <div class="about-section"><br><br>
   <h1>About Us</h1>
   <p>Welcome to Santa's Plushie Factory, where the world of cuddly companions comes to life! 
-    We're a passionate team of plushie enthusiasts dedicated to bringing joy, comfort, and a touch of magic to your life through our soft and huggable creations.</p>
+    We're a passionate team of plushie enthusiasts dedicated to bringing joy, comfort, and a touch of magic to your life through our soft and huggable creations.
+    Our story begins with a shared love for the extraordinary world of plushies. 
+    The founders of Santa's Plushie Factory embarked on this journey with the vision of creating more than just toys. 
+    We wanted to craft companions that warm your heart, ignite your imagination, and, of course, are exceptionally cuddly.</p>
 </div><br><br>
-
-<h2 style="text-align:center">Our Story</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <div class="container">
-        <p>Our story begins with a shared love for the extraordinary world of plushies. 
-          The founders of Santa's Plushie Factory embarked on this journey with the vision of creating more than just toys. 
-          We wanted to craft companions that warm your heart, ignite your imagination, and, of course, are exceptionally cuddly.</p>
-      </div>
-    </div>
-  </div><br><br>
 
   <div class="column">
     <div class="card">

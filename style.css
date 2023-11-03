@@ -27,6 +27,13 @@ body {
     background-attachment: fixed;
 }
 
+.content-margin {
+    margin: 5rem 10rem 10rem 10rem;
+}
+
+.row {
+    display: flex;
+}
 
 label.logo{
     line-height: 120px;
@@ -60,17 +67,76 @@ header {
     margin-bottom: 40px;
 }
 
-form input {
-    font-weight: 600;
-}
-
-form input:focus {
-    border-color:rgb(224, 0, 0);
-}
-
-::placeholder {
-    color: rgba(255, 0, 0, 0.641);  /*input field placeholder text*/
+button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
     font-weight: bold;
+    margin: 20px 0px;
+    padding: 5px 15px;
+    width: 50%;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+
+
+
+
+/* su.php & login.php */
+.layout {
+    width: 350px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #000; 
+    padding: 20px;
+    background-image: linear-gradient(red, purple);
+    border-radius: 30px;
+    border-style: ridge;
+}
+
+.layout h1 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin: 40px 0;
+}
+
+.layout p {
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+    margin: 15px 0;
+}
+
+.layout input {
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 1px;
+    border: 1;
+    border-radius: 10px;
+}
+
+.layout button {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0px;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+a:link {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 
@@ -85,46 +151,92 @@ form input:focus {
 }
 
 
-.layout {
-    width: 350px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    color: #000; 
+
+
+
+/*product.php*/
+.pd-pg-wrapper {
+    display: flex;  /*general css to display elements in a row*/
 }
 
-.layout h1 {
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 40px 0;
+.pd-pg-wrapper img {
+    margin: 15px;
 }
 
-.layout p {
-    font-size: 20px;
-    margin: 15px 0;
+.pd-major-deets {
+    margin: 15px;
+    position: relative;
 }
 
-.layout input {
-    font-size: 16px;
-    width: 100%;
-    padding: 15px 10px;
-    border: 1;
-    outline: none;
+.added-to-cart {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color: whitesmoke;
+}
+
+
+
+
+
+/* products_main.php */
+.pd-category {
+    margin: 10px;
+    width: 20rem;
+    height: 12rem;
+    background-color: rgb(229, 229, 229);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* cart.php */
+.cart-box {
+    margin: 8px 0;
+    padding: 5px;
+    font-weight: 800;
+    background-color: rgb(229, 229, 229);
+    box-shadow: 1px 1px rgb(116, 116, 116);
     border-radius: 10px;
 }
 
-.layout button {
-    background-color: black;
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 20px 0px;
-    padding: 10px 15px;
-    width: 50%;
+.cart-box img {
+    width: 7rem;
+    height: 7rem;
+}
+.cart-box button {
+    margin: 0 10px;
+    padding: 15px;
 }
 
+.cart-box-layout {
+    display: inline-table;
+}
+
+.cart-box-layout table {
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+}
+
+.cart-box-layout td {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 15rem;
+}
+
+
+
+
+
+
+
+/*products display for index.html & products pages*/
 .product-section {
     margin: 0 10rem; /*to make the product section narrower*/
     display: flex;
@@ -132,50 +244,6 @@ form input:focus {
     justify-content: center;
 }
 
-
-
-
-
-/*newproduct.php*/
-.np-page-layout {
-    /*margin-top: 7rem;*/
-    margin: 7rem 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.np-page-layout input {
-    margin: 10px;
-    padding: 10px;
-    width: 30rem;
-    border: 3px solid red;
-    border-radius: 50px;
-}
-
-.np-page-layout input:focus {
-    border-color: rgb(201, 0, 0);
-}
-
-.np-page-layout textarea {
-    margin: 10px;
-    padding: 8px;
-    width: 30rem;
-    height: 20rem;
-    border: 3px solid red;
-    border-radius: 10px;
-}
-
-.np-page-layout textarea:focus {
-    border-color: rgb(201, 0, 0);
-}
-
-
-
-
-
-/*products display for index.html & products pages*/
 .product-section a {
     text-decoration: none;
     color: inherit;
@@ -185,7 +253,6 @@ form input:focus {
     width: 250px;
     height: 320px;
     background-color: rgb(229, 229, 229);
-    /*border:2px solid red;*/
     box-shadow: 1px 1px rgb(116, 116, 116);
     border-radius: 10px;
     margin: 15px;
