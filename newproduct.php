@@ -1,5 +1,6 @@
 <?php
 
+    require("session_handling.php");
     include("Connectdb.php");
 
     if ($_SERVER['REQUEST_METHOD']=="POST") {
@@ -44,7 +45,7 @@
 
             if ($result) {
                 echo "Product added successfully <br/>";
-                header("Location: index.php");
+                header("Location: viewproducts.php");
                 die;
             }
             else {
@@ -64,7 +65,7 @@
 
 
 <head>
-<title>Admin Product</title>
+<title>Admin Add Product</title>
 <link rel="stylesheet" href="astyle.css">
 </head>
 <body>
@@ -73,7 +74,7 @@
 	<img src ="images/logo.png" width="160" height="100">
 		<img src="images/profile.png" class="profile">
 			<a href="admin.html">Dashboard</a>
-			<a href="pselect.html">Product</a>
+			<a href="apselect.php">Product</a>
 			<a href="auser.php">Users</a>
 			<a href="index.php">Statistic</a>
 			<a href="index.php">Logout</a>
@@ -89,7 +90,7 @@
         <div class="row">
             <div>
                 <p>Product Size</p>
-                <input type="text" name="pd-size" placeholder="0cm" autocomplete="off" required style="width: 50%;">
+                <input type="text" name="pd-size" placeholder="0cm X 0cm X 0cm" autocomplete="off" required style="width: 80%;">
             </div>
             <div>
                 <p>Quantity</p>

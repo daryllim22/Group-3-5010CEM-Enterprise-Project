@@ -57,7 +57,7 @@
                 
                 <ul>
                     <li><a href="index.php"><img src ="images/home.png" width="130" height="40"></a></li>
-                    <li><a href="product.html"><img src ="images/p.png" width="130" height="40"></a></li>
+                    <li><a href="products_main.php"><img src ="images/p.png" width="130" height="40"></a></li>
                     <li><a href="feedback.html"><img src ="images/fb.png" width="130" height="40"></a></li>
                     <li><a href="au.html"><img src ="images/au.png" width="130" height="40"></a></li>
 
@@ -73,8 +73,8 @@
                 <img src="<?php echo $pdImg ?>" alt="Product Image" width="450rem" height="450rem;">
                 <div class="pd-major-deets">
                     <h1 style="font-size: 3rem; flex-wrap: wrap;"><?php echo $pdName; ?></h1>
-                    <h2 style="color: rgba(255, 0, 0, 0.858); margin-bottom: 15px">RM<?php echo $pdPrice ?></h2>
-                    <h3>Size: <?php echo $pdSize ?>cm</h3>
+                    <h2 style="color: rgba(255, 0, 0, 0.858); margin-bottom: 15px"><?php echo $pdPrice ?></h2>
+                    <h3>Size: <?php echo $pdSize ?></h3>
                     <p>Stock count: <?php echo $pdStockCount ?></p><br/>
                     <h2>Description</h2>
                     <p><?php echo $pdDescription ?></p><br/><br/><br/>
@@ -147,12 +147,6 @@
                         console.log("Response received from db_cart_insert.php");
                     }
                 })
-                // .then(responseText => {
-                //     if (responseText === "Success") {
-                //         const successsMsg = document.getElementById("successMessage");
-                //         successsMsg.textContent = "Items added to cart";
-                //     }
-                // })
                 .catch(error => {
                     console.error("Error: ", error);
                 })
