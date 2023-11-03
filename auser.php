@@ -18,8 +18,8 @@ require("session_handling.php");
 <div class="sidebar">
 	<img src ="images/logo.png" width="160" height="100">
 		<img src="images/profile.png" class="profile">
-			<a href="admin.html">Dashboard</a>
-			<a href="pselect.html">Product</a>
+			<a href="admin.php">Dashboard</a>
+			<a href="apselect.php">Product</a>
 			<a href="auser.php">Users</a>
 			<a href="index.php">Statistic</a>
 			<a href="logout.php">Logout</a>

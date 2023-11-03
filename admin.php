@@ -27,7 +27,7 @@ require("session_handling.php");
 <h1>Admin Dashboard</h1>
 <div class="row">
 	<div class="column">
-	<a href="newproduct.php"><img src ="images/product.png" width="300" height="300"></a>
+	<a href="apselect.php"><img src ="images/product.png" width="300" height="300"></a>
 </div>
 
 	<div class="column">
