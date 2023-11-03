@@ -8,4 +8,8 @@
     else {
         include("index_guestview.php");
     }
+
+
+    //this file is to determine which interface to show the users depending on whether they are logged in 
+    //or accessing the website as a guest
 ?>

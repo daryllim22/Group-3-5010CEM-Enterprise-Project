@@ -1,17 +1,17 @@
 * {
     padding: 0;
     margin: 0;
-    }
+}
     
-    body {
+body {
     background-image: url('images/abg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    }
+}
     
     
-    .sidebar{
+.sidebar{
     height: 100%;
     width: 160px;
     position: fixed;
@@ -19,9 +19,9 @@
     left: 0;
     z-index: 1;
     background-image: linear-gradient(red, #7E6CFA);
-    }
+}
     
-    .sidebar a {
+.sidebar a {
     padding: 20px 26px;
     color:white;
     text-decoration:none;
@@ -29,12 +29,12 @@
     font-size:25px;
     display:block;	
         
-    }
-    .sidebar a:hover{
+}
+.sidebar a:hover{
     color:black;
-    }
+}
     
-    .select{
+.select{
     width: 300px;
     left: 30%;
     transform: translate(50%, 5%);
@@ -45,52 +45,52 @@
     border-radius: 30px;
     border-style: ridge;
     
-    }
+}
     
-    .profile {
+.profile {
     padding: 10px 26px;
     width:100px;
     height:100px;
     border-radius: 50%;
-    }
+}
     
     
-    .layout {
+.layout {
     width: 350px;
     left: 28%;
     transform: translate(50%, 1%);
     position: absolute;
-    color: #000; 
+    color: white; 
     padding: 20px;
     background-image: linear-gradient(red, #7E6CFA);
     border-radius: 30px;
     border-style: ridge;
-    }
+}
     
-    .layout h1 {
+.layout h1 {
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
     color: white;
     margin: 40px 0;
-    }
+}
     
-    .layout p {
+.layout p {
     font-size: 20px;
     font-weight:bold;
     color: white;
     margin: 15px 0;
-    }
+}
     
-    .layout input {
+.layout input {
     font-size: 16px;
     width: 100%;
     padding: 15px 1px;
     border: 1;
     border-radius: 10px;
-    }
+}
     
-    .layout button {
+.layout button {
     background-color: black;
     color: white;
     font-size: 16px;
@@ -100,9 +100,9 @@
     width: 50%;
     border-radius: 20px;
     border-style: groove;
-    }
+}
     
-    textarea{
+textarea{
     font-size: 16px;
     width: 100%;
     height: 100px;
@@ -110,10 +110,10 @@
     border: 1;
     border-radius: 10px;
     resize: none;
-    }
+}
     
     
-    table {
+table {
     width: 60%;
     border: 1px solid;
     text-align: center;
@@ -122,42 +122,82 @@
     transform: translate(10%, 5%);
     position: absolute;
         
-    }
+}
     
-    table th{
+table th{
     padding-top: 22px;
     padding-bottom: 22px;
     background-image: linear-gradient(red, #7E6CFA);
     color: white;
         
-    }
+}
     
-    table td {
+table td {
     padding-top: 10px;
     padding-bottom: 10px;	
         
-    }
+}
     
-    table, th, td {
+table, th, td {
     border-style: groove;
-    }
+}
+
+table img {
+    width: 7rem;
+    height: 7rem;
+}
     
-    .delete {
+.delete {
     font-size:27px;
+    color: white;
     background-image: linear-gradient(red, #A3132D);
     margin: 2px 0px;
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    }
+}
     
-    a:link {
+a:link {
     color: white;
     font-weight: bold;
     background-color: transparent;
     text-decoration: none;
-    }
+}
 
-    .row {
-        display: flex;
-    }
+.checkbox-grp {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-grp label {
+    margin-left: 3px;
+    margin-right: 15px;
+    white-space: nowrap; /*forcing the text to remain in the same*/
+}
+
+.checkbox-grp-feature {
+    display: flex;
+    align-items: center;
+    /* font-size: 2rem; */
+}
+
+.checkbox-grp-feature input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+}
+
+.checkbox-grp-feature label {
+    margin-left: 5px;
+    margin-right: 10px;
+    white-space: nowrap; /*forcing the text to remain in the same line*/
+    font-size: 2rem;
+}
+
+
+
+
+
+/* layouts */
+.row {
+    display: flex;
+}

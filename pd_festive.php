@@ -1,7 +1,12 @@
+<?php
+    require("session_handling.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="utf=8">
     <head>
-        <title>Santa's Plushie Factory</title>
+        <title>Products: Festive</title>
 
         <!--css stylesheet-->
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -28,19 +33,14 @@
         </header>
 
 
-        <h1 class="welcome-title">Welcome to Santa's Plushie Factory</h1>
+        <div class="content-margin">
+            <h1 style="font-size: 3rem; text-align: center; margin: 40px 0px;">Festive</h1>
 
-
-        <!--carousel of promotions here-->
-        <div class="carousel-container">
-            <span>will come back to this later</span>
-        </div>
-
-
-        <!-- displaying featured products -->
-        <div class="product-section">
-            <!-- displaying the products dynamically -->
-            <?php include('db_productbox.php'); ?>
+            <!-- displaying featured products -->
+            <div class="product-section">
+                <!-- displaying the products dynamically -->
+                <?php include('db_productbox.php'); ?>
+            </div>
         </div>
 
 

@@ -41,7 +41,7 @@
                 
                 <ul>
                     <li><a href="index.php"><img src ="images/home.png" width="130" height="40"></a></li>
-                    <li><a href="product.html"><img src ="images/p.png" width="130" height="40"></a></li>
+                    <li><a href="products_main.php"><img src ="images/p.png" width="130" height="40"></a></li>
                     <li><a href="feedback.html"><img src ="images/fb.png" width="130" height="40"></a></li>
                     <li><a href="au.html"><img src ="images/au.png" width="130" height="40"></a></li>
 
