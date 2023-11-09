@@ -2,7 +2,6 @@
 	require("session_handling.php");
 ?>
 
-
 <!DOCTYPE html>
 <html lang="utf=8">
 
@@ -17,18 +16,31 @@
 <div class="sidebar">
 	<img src ="images/logo.png" width="160" height="100">
 		<img src="images/profile.png" class="profile">
-			<a href="admin.html">Dashboard</a>
-			<a href="pselect.html">Product</a>
+			<a href="admin.php">Dashboard</a>
+			<a href="apselect.html">Product</a>
 			<a href="auser.php">Users</a>
 			<a href="index.php">Statistic</a>
-			<a href="index.php">Logout</a>
+			<a href="logout.php">Logout</a>
 </div>
 
 <div class="select">
-		<a href="newproduct.php"><img src ="images/add.png" width="300" height="300"></a>
-		<a href="viewproducts.php"><img src ="images/delete.png" width="300" height="300"></a>
-	</div>
+<h1>Product</h1>
+<div class="row">
+	<div class="column">
+	<a href="newproduct.php"><img src ="images/add.png" width="300" height="300"></a>
 </div>
+
+	<div class="column">
+	<a href="index.php"><img src ="images/delete.png" width="300" height="300"></a>
+</div>
+
+	<div class="column">
+	<a href="index.php"><img src ="images/promo.png" width="300" height="300"></a>
+  </div>
+</div>
+
+
+
 
 </body>
 </html>
