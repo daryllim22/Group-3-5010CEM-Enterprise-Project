@@ -39,6 +39,9 @@
 
         <!-- displaying featured products -->
         <div class="product-section">
+            <!-- setting the category of items to display -->
+            <?php $catID = 1; ?>
+
             <!-- displaying the products dynamically -->
             <?php include('db_productbox.php'); ?>
         </div>
