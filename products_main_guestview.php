@@ -1,12 +1,7 @@
-<!-- <?php
-    //include("session_handling.php");
-?> -->
-
-
 <!DOCTYPE html>
 <html lang="utf=8">
     <head>
-        <title>Santa's Plushie Factory</title>
+        <title>Products</title>
 
         <!--css stylesheet-->
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -32,27 +27,39 @@
             </nav>
         </header>
 
+        <div class="content-margin">
+            <h1 style="font-size: 3rem; text-align: center; margin: 40px 0px;">Products</h1>
 
-        <h1 class="welcome-title">Welcome to Santa's Plushie Factory</h1>
+            <div class="product-section">
+                <!-- category buttons -->
+                <a href="pd_animals.php">
+                    <div class="pd-category"> 
+                        <p>Animals</p>
+                    </div>
+                </a>
 
+                <a href="pd_fun.php">
+                    <div class="pd-category"> 
+                        <p>Fun</p>
+                    </div>
+                </a>
 
-        <!--carousel of promotions here-->
-        <div class="carousel-container">
-            <span>will come back to this later</span>
+                <a href="pd_festive.php">
+                    <div class="pd-category"> 
+                        <p>Festive</p>
+                    </div>
+                </a>
+
+                <a href="pd_collaborations.php">
+                    <div class="pd-category"> 
+                        <p>Collaborations</p>
+                    </div>
+                </a>
+            </div>
         </div>
 
 
-        <!-- displaying featured products -->
-        <div class="product-section">
-             <!-- setting the category of items to display -->
-             <?php $catID = 1; ?>
-
-            <!-- displaying the products dynamically -->
-            <?php include('db_productbox.php'); ?>
-        </div>
-
-
-
+        
         <!--javascript-->
         
     </body>
