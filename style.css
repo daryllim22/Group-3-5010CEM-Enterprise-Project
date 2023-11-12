@@ -145,9 +145,78 @@ a:link {
 
 /*index.html*/
 .welcome-title {
-    padding: 5rem;
+    /* padding: 5rem; */
+    margin-top: 5rem;
+    margin-bottom: 2rem;
     text-align: center;
     font-size: 3rem;
+}
+
+.carousel-container {
+    width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.carousel-container img {
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; /*to prevent cursor highlighting*/
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.slide-fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* fade animation */
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 
@@ -210,6 +279,7 @@ a:link {
     width: 7rem;
     height: 7rem;
 }
+
 .cart-box button {
     margin: 0 10px;
     padding: 15px;
@@ -238,7 +308,7 @@ a:link {
 
 /*products display for index.html & products pages*/
 .product-section {
-    margin: 0 10rem; /*to make the product section narrower*/
+    margin: 15px 10rem 5rem; /*to make the product section narrower*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

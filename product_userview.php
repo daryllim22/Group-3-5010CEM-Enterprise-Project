@@ -63,8 +63,8 @@
                     <li><a href="feedback.php"><img src ="images/fb.png" width="130" height="40"></a></li>
                     <li><a href="about_us.php"><img src ="images/au.png" width="130" height="40"></a></li>
 
-                    <li><a href="cart.php">Shopping Cart</a></li>
-                    <li><a href="logout.php">Logout</a></li>
+                    <li><a href="cart.php"><img src="images/cart.png" width="40" height="40"></a></li>
+                    <li><a href="logout.php"><img src="images/logout.png" width="100" height="50"></a></li>
                 </ul>
             </nav>
         </header>
