@@ -35,7 +35,7 @@
 </div>
 
 	<div class="column">
-	<a href="index.php"><img src ="images/promo.png" width="300" height="300"></a>
+	<a href="apromo.php"><img src ="images/promo.png" width="300" height="300"></a>
   </div>
 </div>
 

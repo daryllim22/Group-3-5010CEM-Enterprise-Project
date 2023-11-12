@@ -19,6 +19,9 @@
         die('SQL query error: ' . mysqli_error($con));
     }
 
+
+    // closing database connection
+    $con->close();
 ?>
 
 
