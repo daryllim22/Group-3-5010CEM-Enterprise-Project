@@ -132,7 +132,7 @@ button {
     border-style: groove;
 }
 
-a:link {
+a {
     color: white;
     font-weight: bold;
     background-color: transparent;
@@ -368,10 +368,6 @@ a:link {
 
 .search form {
     display: flex;
-    /* position: absolute;
-    top: 0;
-    right: 0; */
-    /* margin: 40px; */
 }
 
 .search input[type=text] {
