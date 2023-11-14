@@ -132,11 +132,11 @@ textarea{
     
     
  table {
-    width: 60%;
+    width: 90%;
     border: 1px solid;
-    text-align: center;
     font-size: 25px;
-    left: 20%;
+	text-align: center;
+    left: 10%;
     transform: translate(5%, 5%);
     position: absolute;
         
@@ -152,7 +152,7 @@ textarea{
     
     table td {
     padding-top: 10px;
-    padding-bottom: 10px;	
+    padding-bottom: 10px;
         
     }
     
