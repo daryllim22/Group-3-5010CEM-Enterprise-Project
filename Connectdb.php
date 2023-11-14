@@ -279,5 +279,4 @@ else {
 	}
 }
 
-$conn->close();
 ?>
