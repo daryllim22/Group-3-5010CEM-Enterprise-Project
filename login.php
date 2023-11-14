@@ -21,16 +21,23 @@ if ($result && mysqli_num_rows($result)>0){
 
 	$user_data = mysqli_fetch_assoc($result);
 
-	if(password_verify($pw,$user_data['pw'])){
+		if(password_verify($pw,$user_data['pw'])){
 
-		//retrieving user ID from the database for the logged in session
-		$userID = $user_data['id'];
-		$_SESSION['userID'] = $userID;
+			//retrieving user ID from the database for the logged in session
+			$userID = $user_data['id'];
+			$_SESSION['userID'] = $userID;
 
-		//directing user to the landing page once logged in
-		header("Location: index.php");
-		die;
-	}
+			if($uname == 'admin'){
+				// if admin, direct to admin dashboard
+				header("Location: admin.php");
+				die;
+			}
+			else {
+				// directing regular users to homepage
+				header("Location: index.php");
+				die;
+			}
+		}
 	} 
 }
 echo "Make sure to enter email and password correctly, please try again.";
