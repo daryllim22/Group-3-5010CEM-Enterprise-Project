@@ -131,32 +131,34 @@ textarea{
 }
     
     
-table {
+ table {
     width: 60%;
-    margin: 0 auto;
     border: 1px solid;
     text-align: center;
-    font-size: 30px;
-    margin-top: 1%;
-}
+    font-size: 25px;
+    left: 20%;
+    transform: translate(5%, 5%);
+    position: absolute;
+        
+    }
     
-table th{
+    table th{
     padding-top: 22px;
     padding-bottom: 22px;
     background-image: linear-gradient(red, #7E6CFA);
-    color: white;;
-}
+    color: white;
+        
+    }
     
-table td {
+    table td {
     padding-top: 10px;
     padding-bottom: 10px;	
-    padding: 0 ;
-}
+        
+    }
     
-table, th, td {
+    table, th, td {
     border-style: groove;
-}
-    
+    }   
 /* all red buttons */
 .delete {
     font-size:27px;
