@@ -1,6 +1,9 @@
 <?php
-	require("session_handling.php");
+
+require("session_handling.php");
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="utf=8">
@@ -23,6 +26,8 @@
 			<a href="logout.php">Logout</a>
 </div>
 
+
+
 <table>
 	<tr>
 		<th>Id No.</th>
@@ -34,6 +39,7 @@
 		<th>Zip</th>
 		<th>Product Id</th>
 		<th>Quantity</th>
+		<th>Price</th>
 		<th>Date of Purchased</th>
 	</tr>
 	
@@ -42,24 +48,25 @@ include("Connectdb.php");
 
 $query = "SELECT 
 		  payment.id, 
-		  payment.billname, 
+		  payment.billName, 
 		  payment.email, 
 		  payment.address, 
 		  payment.city,
 		  payment.state, 
 		  payment.zip, 
-		  cart.pdID,
+		  cart.pid,
 		  cart.quantity,
-		  payment.datepay 
+		  cart.price,
+		  payment.datePay 
 		  from payment
-		  join cart ON payment.id = cart.userID";
+		  join cart ON payment.id = cart.id";
 $result = mysqli_query($con, $query);
 
 if (mysqli_num_rows($result) > 0) {
 	while ($row = mysqli_fetch_assoc($result)){
-	echo "<tr><td>". $row["id"] .  "</td><td>" . $row["billname"] .  "</td><td>" . $row["email"] . "</td><td>" . $row["address"] . "</td><td>" . 
-	$row["city"] . "</td><td>" . $row["state"] . "</td><td>" . $row["zip"] . "</td><td>" . $row["pdID"] . "</td><td>" . $row["quantity"] . "</td><td>" . $row["datepay"] . 
-	"</td><tr>" ;
+	echo "<tr><td>". $row["id"] .  "</td><td>" . $row["billName"] .  "</td><td>" . $row["email"] . "</td><td>" . $row["address"] . "</td><td>" . 
+	$row["city"] . "</td><td>" . $row["state"] . "</td><td>" . $row["zip"] . "</td><td>" . $row["pid"] . "</td><td>" . $row["quantity"] ."</td><td>RM" . 
+	$row["price"] . "</td><td>" . $row["datePay"] . "</td><tr>" ;
 
 
 	}
