@@ -105,7 +105,7 @@
 </div>
 
 <div class="layout">
-<h1>Add Product</h1>
+<h1>Edit Product</h1>
     <!-- form sends over to `db_editproduct.php -->
 	<form action="db_aeditproduct.php?id=<?php echo $pdID; ?>" method="post" enctype="multipart/form-data">
 		<p>Product name:</p>
