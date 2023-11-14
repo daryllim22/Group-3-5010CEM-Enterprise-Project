@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <nav>
-    <label class="logo"><img src ="images/logo.png" width="190" height="90"></label>
+<label class="logo"><img src ="images/logo.png" width="190" height="90"></label>
     <ul>
     <li><a href="index.php"><img src ="images/home.png" width="130" height="40"></a></li>
-    <li><a href="product.php"><img src ="images/p.png" width="130" height="40"></a></li>
+    <li><a href="products_main.php"><img src ="images/p.png" width="130" height="40"></a></li>
     <li><a href="feedback.php"><img src ="images/fb.png" width="130" height="40"></a></li>
     <li><a href="about_us.php"><img src ="images/au.png" width="130" height="40"></a></li>
-    <li><a href="login.php"><img src ="images/login.png" width="100" height="50"></a></li>
+    <li><a href="cart.php"><img src ="images/cart.png" width="100" height="50"></a></li>
+    <li><a href="logout.php"><img src ="images/logout.png" width="100" height="50"></a></li>
     </ul>
-</nav>
+</nav><br><br>
 <center>
-<div class="about-section"><br><br>
+<div class="column">
+  <div class="card">
+  <div class="container"><br><br>
   <h1>About Us</h1>
   <p>Welcome to Santa's Plushie Factory, where the world of cuddly companions comes to life! 
     We're a passionate team of plushie enthusiasts dedicated to bringing joy, comfort, and a touch of magic to your life through our soft and huggable creations.
