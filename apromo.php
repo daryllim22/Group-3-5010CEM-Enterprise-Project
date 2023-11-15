@@ -31,7 +31,7 @@
                     <a href="apselect.php">Product</a>
                     <a href="auser.php">Users</a>
                     <a href="index.php">Statistic</a>
-                    <a href="index.php">Logout</a>
+                    <a href="logout.php">Logout</a>
         </div>
 
 
@@ -84,7 +84,7 @@
             <p>Upload item</p>
             <form action="db_uploadpromo.php" method="post" enctype="multipart/form-data">
                 <input type="file" name="promo-image" required>
-                <input type="text" name="promo-title" placeholder="Title" required>
+                <input type="text" name="promo-title" placeholder="Title" autocomplete="off" required>
                 <button type="submit">Upload</button>
             </form>
         </div>
