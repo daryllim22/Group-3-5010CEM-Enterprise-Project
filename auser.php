@@ -1,3 +1,8 @@
+<?php
+
+require("session_handling.php");
+
+?>
 
 
 
