@@ -35,7 +35,7 @@ require("session_handling.php");
 </div>
 
 	<div class="column">
-	<a href="index.php"><img src ="images/statistic.png" width="300" height="300"></a>
+	<a href="areport.php"><img src ="images/statistic.png" width="300" height="300"></a>
   </div>
 </div>
 <div class="logout">
