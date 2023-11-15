@@ -19,7 +19,7 @@
 			<a href="admin.php">Dashboard</a>
 			<a href="apselect.php">Product</a>
 			<a href="auser.php">Users</a>
-			<a href="index.php">Statistic</a>
+			<a href="areport.php">Statistic</a>
 			<a href="logout.php">Logout</a>
 </div>
 

@@ -100,7 +100,9 @@
                             <option value="15">15</option>
                         </select>
                     </div>
-                    <button id="addToCartBtn" style="margin-top: 20px;">Add to cart</button>
+                    <a href="login.php">
+                        <button id="addToCartBtn" style="margin-top: 20px;">Add to cart</button>
+                    </a>
                 </div>
             </div>
             <!-- printing a success message when item(s) successfully added to cart -->

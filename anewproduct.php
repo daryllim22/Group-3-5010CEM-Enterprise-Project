@@ -2,7 +2,6 @@
 
     require("session_handling.php");
     include("Connectdb.php");
-
     if ($_SERVER['REQUEST_METHOD']=="POST") {
 
         $pdName = $_POST['pd-name'];
@@ -54,7 +53,7 @@
         }
         else {
             echo "Please fill up all details";
-         }
+        }
 
 
         //  closing database connection
@@ -80,8 +79,8 @@
 			<a href="admin.php">Dashboard</a>
 			<a href="apselect.php">Product</a>
 			<a href="auser.php">Users</a>
-			<a href="index.php">Statistic</a>
-			<a href="index.php">Logout</a>
+			<a href="areport.php">Statistic</a>
+			<a href="logout.php">Logout</a>
 </div>
 
 <div class="layout">
@@ -105,7 +104,7 @@
 		<textarea name="pd-description" placeholder="Product description"></textarea>
 		<p>Image:</p>
 		<input type="file" name="pd-image" id="files">
-		<label for="files">Choose Image</label>
+		<label for="files">Choose Image (jpeg, jpg or png file types only)</label>
 		<br/><br/>
 		<button type="submit">Add Product</button>
 	</form>
