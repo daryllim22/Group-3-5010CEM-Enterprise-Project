@@ -265,7 +265,9 @@ else {
 		`city` text NOT NULL,
 		`state` text NOT NULL,
 		`zip` int(5) NOT NULL,
-		`datePay` date NOT NULL
+		`datePay` date NOT NULL,
+		`cartID` bigint(20) UNSIGNED NOT NULL,
+		FOREIGN KEY (`cartID`) REFERENCES `cart` (`cartID`) ON DELETE CASCADE ON UPDATE CASCADE
 	) ENGINE=InnoDB";
 
 	$result = mysqli_query($con, $query);
